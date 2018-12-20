@@ -14,7 +14,6 @@
 #
 import os
 import sys
-# sys.path.insert(0, '/Users/cocodrips/Documents/ghq/src/github.com/cocodrips/simple-sphinx-api-doc/src')
 sys.path.insert(0, os.path.abspath('../src'))
 
 

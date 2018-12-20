@@ -1,0 +1,4 @@
+"""Directory"""
+
+def a():
+	pass
