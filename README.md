@@ -17,3 +17,19 @@
 	- *.rstからhtmlを生成
 
 Reference: [sphinx-apidoc — Sphinx 2.0.0+/54565ec ドキュメント](https://www.sphinx-doc.org/ja/master/man/sphinx-apidoc.html)
+
+## Use quick start
+1. `sphinx-quickstart -q --extension sphinx.ext.coverage -p 'sphinx test' -a 'cocodrips' docs`
+1. conf.pyの変更
+	- 以下をextensionsに追加 
+	```
+		'sphinx.ext.autodoc',
+	    'sphinx.ext.autosummary',
+	    'sphinx.ext.coverage',
+	```
+	- パスの変更
+	`sys.path.insert(0, os.path.abspath('../src'))
+	`
+1. `index.rst`に説明を追加したいmoduleを手動で追加
+1. `make html`
+1. `make coverage`

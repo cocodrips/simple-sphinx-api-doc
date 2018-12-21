@@ -11,6 +11,16 @@ Welcome to professor-component's documentation!
    :caption: Contents:
 
 
+API
+=================
+.. autosummary::
+	:toctree: generated
+
+	main
+	no_doc
+	moduleB.foo
+
+
 Indices and tables
 ==================
 
