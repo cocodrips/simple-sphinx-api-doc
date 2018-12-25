@@ -1,0 +1,24 @@
+autodoc:
+  module:
+    maxdepth: 4
+
+  default:
+    name: default
+    pattern: .*
+    generate:
+    - members
+    - undoc-members
+    - show-inheritance
+    style:
+      h1: ======================================\n
+      h2: --------------------------------------\n
+    package: NAME
+    module: NAME
+
+  styles:
+  - def:
+    name: only module
+    pattern: module_interface.*
+    generate:
+    - automodule
+    
